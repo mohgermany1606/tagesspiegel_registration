@@ -10,7 +10,7 @@ This project automates the registration process on the Tagesspiegel website usin
 ## Prerequisites
 
 - Python 3.x
-- pip (Python package installer)
+- pip (Python package installer) or pip3
 - Robot Framework
 - SeleniumLibrary for Robot Framework
 - Web driver (e.g., ChromeDriver) installed and added to PATH
