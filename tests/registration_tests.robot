@@ -5,12 +5,15 @@ Resource    ../resources/Variables.robot
 Resource    ../pages/login_page.robot
 Resource    ../pages/registration_page.robot
 Resource    ../pages/email_page.robot
+Resource    ../pages/main_page.robot
 
 
-*** Test Case ***
+*** Test Cases ***
 Verify Registration Process
     [Documentation]    Verify the registration process on tagesspiegel.de website
-    SeleniumLibrary.Open Browser    ${BASE_URL}    ${BROWSER} 
+    ${base_url}=    Get Base URL    ${ENV}
+    Log  Base URL: ${base_url}
+    Open Browser    ${base_url}    ${BROWSER}
     Maximize Browser Window
     Sleep    3s  # Wait for the modal to load
     
@@ -18,7 +21,7 @@ Verify Registration Process
     
     # Clicks the accept button on Login cookie window
     Click Accept Button
-    Log  Button Clicked
+    Log  Accept Button Clicked
     Unselect Frame    
 
     # Click on Login button and switch to modal

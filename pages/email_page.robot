@@ -9,7 +9,6 @@ Resource   login_page.robot
 
 
 
-
 *** Keywords ***
 Create Temporary HTML File
     [Arguments]    ${content}    ${file_path}

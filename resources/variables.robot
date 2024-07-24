@@ -1,7 +1,10 @@
 *** Variables ***
-# Base URL
-${BASE_URL}         https://www.tagesspiegel.de
+${BASE_URL_PRODUCTION}      https://www.tagesspiegel.de
+${BASE_URL_STAGING}        https://staging.tagesspiegel.de
+${BASE_URL_TEST}          https://test1.tagesspiegel.de
 
+# Default URL fallback
+${DEFAULT_BASE_URL}       ${BASE_URL_PRODUCTION}
 
 # WebDriver Settings
 ${BROWSER}          chrome
@@ -15,8 +18,7 @@ ${FIRST_NAME}   Mohini
 ${LAST_NAME}    Gupta
 
 
-
-# Page Elements
+#Page Elements
 
 #Login Button Elements
 ${LOGIN_BUTTON}        xpath=//a[@href='https://mein.tagesspiegel.de' and @class='menu__profile' and @title='Melden Sie sich mit Ihrem Tagesspiegel-Konto an']
@@ -37,12 +39,13 @@ ${PASSWORD_INPUT}        id=forms/formSetPassword_password
 ${CONFIRMPASSWORD_INPUT}   id=forms/formSetPassword_password_confirmation
 ${SUBMIT_BTN_SET_PASSWORD}    xpath=//button[@type='submit' and @value='Speichern']
 
-#Emails Elements
+#Email Elements
 ${GMAIL_ID}       tagesspiegel102automation@gmail.com
-${GMAIL_PASSWORD}       vdav fuct rdli qmgg
+${GMAIL_PASSWORD}       vdav fuct rdli qmgg   # This is appkey generated from Gmail account 
 ${SUBJECT}    Herzlich Willkommen beim Tagesspiegel - Jetzt Passwort vergeben!
 ${TEMP_HTML_FILE}  ${CURDIR}/temp_file.html
 ${BUTTON_SET_PASSWORD}    //a[contains(text(), 'Jetzt Passwort festlegen')]
+
 
 
 

@@ -34,7 +34,7 @@ This project automates the registration process on the Tagesspiegel website usin
 
 3. **Set an App Password:**
    - Go back to the **Security** section.
-   - Under "Signing in to Google," select **App passwords**.
+   - Under "Signing in to Google," select **App passwords**. [App passwords] (https://myaccount.google.com/apppasswords?pli=1&rapt=AEjHL4MN09rKkcTMyZtzJqhIAT-07fOUtz-09Ilj6jDzLvBWcuhETUKK3uqePBuRRzFCrFm2OqDMEuJ3z_4ldVa-0-AN-wU4u0Fia_Gmm7i9d_f8I_xk_ZI)
    - Enter your Google account password if prompted.
    - In the "Select app" dropdown, choose **Other (Custom name)** and enter a name for the app (e.g., "Robot Framework").
    - Click **Generate**.
