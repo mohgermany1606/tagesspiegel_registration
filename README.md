@@ -4,8 +4,8 @@ This project automates the registration process on the Tagesspiegel website usin
 
 ## Libraries Used
 
-SeleniumLibrary: For browser automation.
-ImapLibrary: For email handling.
+1. **SeleniumLibrary: For browser automation.**
+2. **ImapLibrary: For email handling.**
 
 ## Prerequisites
 
