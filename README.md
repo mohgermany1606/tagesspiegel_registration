@@ -39,6 +39,7 @@ This project automates the registration process on the Tagesspiegel website usin
    - In the "Select app" dropdown, choose **Other (Custom name)** and enter a name for the app (e.g., "Robot Framework").
    - Click **Generate**.
    - Copy the generated password (e.g., `vdav fuct rdli qmgg`) and click **Done**.
+   - Paste this appkey in ${GMAIL_PASSWORD} variable present in variables.robot
 
 4. **Enable IMAP in Gmail Settings:**
    - Go to [Gmail Settings](https://mail.google.com/).
