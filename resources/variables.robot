@@ -40,8 +40,8 @@ ${CONFIRMPASSWORD_INPUT}   id=forms/formSetPassword_password_confirmation
 ${SUBMIT_BTN_SET_PASSWORD}    xpath=//button[@type='submit' and @value='Speichern']
 
 #Email Elements
-${GMAIL_ID}       tagesspiegel102automation@gmail.com
-${GMAIL_PASSWORD}       vdav fuct rdli qmgg   # This is appkey generated from Gmail account 
+${GMAIL_ID}       tagdummy208@gmail.com
+${GMAIL_PASSWORD}       qezu tejw bdnb rctl   # This is appkey generated from Gmail account 
 ${SUBJECT}    Herzlich Willkommen beim Tagesspiegel - Jetzt Passwort vergeben!
 ${TEMP_HTML_FILE}  ${CURDIR}/temp_file.html
 ${BUTTON_SET_PASSWORD}    //a[contains(text(), 'Jetzt Passwort festlegen')]
