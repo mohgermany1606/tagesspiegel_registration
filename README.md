@@ -59,7 +59,9 @@ This project automates the registration process on the Tagesspiegel website usin
 2. Install the required Python packages:
 - pip install robotframework
 - pip install robotframework-seleniumlibrary
-- pip install robotframework-imaplibrary or pip3 install robotframework-imaplibrary
+- pip install rpaframework/pip3 install rpaframework
+- pip install robotframework-imaplibrary/pip3 install robotframework-imaplibrary
+  imaplibrary can be upgraded if needed using pip3 install --upgrade robotframework-imaplibrary
   
 Ensure you have the appropriate web driver installed (e.g., ChromeDriver for Chrome):
 
