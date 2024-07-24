@@ -1,0 +1,7 @@
+*.png
+*.html
+*.xml
+*.txt
+browser/
+.DS_Store
+taggespiegel/interactive_console_output.xml
