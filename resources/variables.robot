@@ -20,26 +20,26 @@ ${LAST_NAME}    Gupta
 
 #Page Elements
 
-#Login Button Elements
+#Login Button Web Elements
 ${LOGIN_BUTTON}        xpath=//a[@href='https://mein.tagesspiegel.de' and @class='menu__profile' and @title='Melden Sie sich mit Ihrem Tagesspiegel-Konto an']
 ${REGISTER_TAB}        xpath=//button[@data-nav-item='register' and .//span[text()='Registrieren']]
 ${MODAL_FRAME}         xpath=//iframe[contains(@id, 'modal-iframe')]
 ${ACCEPT_BTN_HOME}          xpath=//*[@id="notice"]/div[3]/div[1]/div/button
 
 
-#Registration Page Elements
+#Registration Page Web Elements
 ${EMAIL_INPUT}        id=forms/formRegistration_email
 ${FIRST_NAME_INPUT}   id=forms/formRegistration_forename
 ${LAST_NAME_INPUT}    id=forms/formRegistration_surname
 ${SUBMIT_BTN_REGISTRATION}      xpath=//button[@type='submit' and @value='Jetzt registrieren']
 
-#Password Set Page Elements
+#Password Set Page Web Elements
 ${ACCEPT_BTN_PWD}      xpath=//*[@id="notice"]/div[2]/div/div[3]/button[2]
 ${PASSWORD_INPUT}        id=forms/formSetPassword_password
 ${CONFIRMPASSWORD_INPUT}   id=forms/formSetPassword_password_confirmation
 ${SUBMIT_BTN_SET_PASSWORD}    xpath=//button[@type='submit' and @value='Speichern']
 
-#Email Elements
+#Email Page Web Elements
 ${GMAIL_ID}       tagdummy208@gmail.com
 ${GMAIL_PASSWORD}       qezu tejw bdnb rctl   # This is appkey generated from Gmail account 
 ${SUBJECT}    Herzlich Willkommen beim Tagesspiegel - Jetzt Passwort vergeben!
