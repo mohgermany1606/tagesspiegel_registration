@@ -57,19 +57,23 @@ This project automates the registration process on the Tagesspiegel website usin
    cd <repository-directory>
 
 2. Install the required Python packages:
-pip install robotframework
-pip install robotframework-seleniumlibrary
+- pip install robotframework
+- pip install robotframework-seleniumlibrary
+- pip install robotframework-imaplibrary or pip3 install robotframework-imaplibrary
+  
 Ensure you have the appropriate web driver installed (e.g., ChromeDriver for Chrome):
 
-3. Download ChromeDriver
+4. Download ChromeDriver
 Add ChromeDriver to your PATH
 
 
 **Directory Structure -**
 
-tests: Contains the test cases.
-pages: Contains the page object files.
-resources: Contains resource files like variables and custom keywords.
+**tests** : Contains the test cases.
+
+**pages** : Contains the page object files.
+
+**resources** : Contains resource files like variables and custom keywords.
 
 **Run Test -**
 You can run this using robot registration_tests.robot
@@ -79,16 +83,16 @@ You can run this using robot registration_tests.robot
 
 The test case verifies the registration process on the Tagesspiegel website with the following steps:
 
-1.Open the Tagesspiegel website based on the environment.
-2.Click the ‘Anmelden’ link in the header.
-3.Choose the ‘Registrieren’ tab in the login modal.
-4.Fill in data: random email, first name, and last name.
-5.Submit the registration form.
-6.Get the registration link from email (fake implementation for demo).
-7.Open the registration link on the website.
-8.Provide passwords.
-9.Submit the password form.
-10.Verify the user is logged in.
+- Open the Tagesspiegel website based on the environment.
+- Click the ‘Anmelden’ link in the header.
+- Choose the ‘Registrieren’ tab in the login modal.
+- Fill in data: random email, first name, and last name.
+- Submit the registration form.
+- Get the registration link from email (fake implementation for demo).
+- Open the registration link on the website.
+- Provide passwords.
+- Submit the password form.
+- Verify the user is logged in.
 
 ## Files
 **tests/registration_test.robot**
