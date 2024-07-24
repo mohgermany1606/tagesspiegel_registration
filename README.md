@@ -1,6 +1,11 @@
 # Tagesspiegel Registration Automation
 
-This project automates the registration process on the Tagesspiegel website using Robot Framework and follows the Page Object Model (POM) principles. The test can be run in different environments by passing an environment parameter.
+This project automates the registration process on the Tagesspiegel website using Robot Framework and follows the Page Object Model (POM) principles. The test can be run in different environments by passing an ENV parameter
+
+## Libraries Used
+
+SeleniumLibrary: For browser automation.
+ImapLibrary: For email handling.
 
 ## Prerequisites
 
@@ -14,7 +19,8 @@ This project automates the registration process on the Tagesspiegel website usin
 ### Setting up Gmail Account
 
 1. **Open your Google Account:**
-   - Go to [Google Account](https://myaccount.google.com/).
+   - Go to mail.google.com and setup any random gmail id
+   - Login with Gmail ID and password and click on Goggle account
    
 2. **Enable Two-Factor Authentication (2FA):**
    - In the navigation panel, select **Security**.
@@ -82,8 +88,8 @@ The test case verifies the registration process on the Tagesspiegel website with
 8.Provide passwords.
 9.Submit the password form.
 10.Verify the user is logged in.
-Files
 
+## Files
 **tests/registration_test.robot**
 Contains the main test case and high-level keywords.
 
@@ -101,6 +107,17 @@ Defines elements and keywords for interactions on set password page
 
 **pages/email_page.robot**
 Defines element and keywords for interactions on gmail'
+
+**pages/main_page.robot**
+Defines specific keyword for different browser URL
+
+## Run Test Framework
+
+robot --variable ENV:production registration_tests.robot
+
+## Notes
+- Ensure the email address provided has IMAP enabled and an app key generated for it to be used in the tests.
+- If you encounter any issues or have any questions, please feel free to reach out.
 
 
 
