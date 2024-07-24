@@ -8,13 +8,7 @@ Library     String
 Resource   login_page.robot
 
 
-*** Variables ***
-${GMAIL_ID}       tagt7879@gmail.com
-${GMAIL_PASSWORD}       yyzb shkc rabg pojq
-${subject}    Herzlich Willkommen beim Tagesspiegel - Jetzt Passwort vergeben!
-#${Registraton link}         xpath=//*[@id=":n3"]/div[1]/center/table[2]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/p[4]/a
-${TEMP_HTML_FILE}  ${CURDIR}/temp_file.html
-${BUTTON_SET_PASSWORD}    //a[contains(text(), 'Jetzt Passwort festlegen')]
+
 
 *** Keywords ***
 Create Temporary HTML File
